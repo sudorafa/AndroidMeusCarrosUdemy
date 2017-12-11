@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.orafa.androidmeuscarrosudemy.R;
+import com.example.orafa.androidmeuscarrosudemy.model.Car;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,5 +22,9 @@ public class CarViewHolder extends RecyclerView.ViewHolder{
     public CarViewHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
+    }
+
+    public void bindData(Car car) {
+        this.textViewModel.setText(car.getModel());
     }
 }

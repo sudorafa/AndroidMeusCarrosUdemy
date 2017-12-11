@@ -26,13 +26,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/horse" />
+        android:text="@string/horsePower" />
 
     <TextView
         android:id="@+id/text_horse_power"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/horse" />
+        android:text="@string/horsePower" />
 
     <TextView
         android:layout_width="match_parent"

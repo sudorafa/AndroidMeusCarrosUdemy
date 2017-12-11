@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">AndroidMeusCarrosUdemy</string>
     <string name="model">Modelo:</string>
-    <string name="horse">Cavalos:</string>
+    <string name="horsePower">Cavalos:</string>
     <string name="price">Preço:</string>
 </resources>
