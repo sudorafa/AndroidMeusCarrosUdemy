@@ -1,7 +1,9 @@
-package com.example.orafa.androidmeuscarros;
+package com.example.orafa.androidmeuscarrosudemy.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.orafa.androidmeuscarrosudemy.R;
 
 public class DetailsActivity extends AppCompatActivity {
 

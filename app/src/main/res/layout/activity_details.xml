@@ -9,39 +9,41 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.orafa.androidmeuscarros.DetailsActivity">
+    tools:context="com.example.orafa.androidmeuscarrosudemy.view.DetailsActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/modelo" />
+        android:text="@string/model" />
 
     <TextView
         android:id="@+id/text_model"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/modelo" />
+        android:text="@string/model" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cavalos" />
+        android:layout_marginTop="50dp"
+        android:text="@string/horse" />
 
     <TextView
         android:id="@+id/text_horse_power"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cavalos" />
+        android:text="@string/horse" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/preco" />
+        android:layout_marginTop="50dp"
+        android:text="@string/price" />
 
     <TextView
         android:id="@+id/text_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/preco" />
+        android:text="@string/price" />
 
 </LinearLayout>
