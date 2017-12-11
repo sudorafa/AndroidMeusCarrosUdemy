@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.orafa.androidmeuscarrosudemy.R;
+import com.example.orafa.androidmeuscarrosudemy.listener.OnListClickInteractionListener;
 import com.example.orafa.androidmeuscarrosudemy.model.Car;
 
 import butterknife.BindView;
@@ -24,7 +25,13 @@ public class CarViewHolder extends RecyclerView.ViewHolder{
         ButterKnife.bind(this, itemView);
     }
 
-    public void bindData(Car car) {
+    public void bindData(final Car car, final OnListClickInteractionListener listener) {
         this.textViewModel.setText(car.getModel());
+        this.textViewModel.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                listener.onClick(car.getId());
+            }
+        });
     }
 }

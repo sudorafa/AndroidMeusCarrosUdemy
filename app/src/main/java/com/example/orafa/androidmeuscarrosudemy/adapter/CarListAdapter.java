@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.orafa.androidmeuscarrosudemy.R;
+import com.example.orafa.androidmeuscarrosudemy.listener.OnListClickInteractionListener;
 import com.example.orafa.androidmeuscarrosudemy.model.Car;
 import com.example.orafa.androidmeuscarrosudemy.viewholder.CarViewHolder;
 
@@ -19,9 +20,11 @@ import java.util.List;
 public class CarListAdapter extends RecyclerView.Adapter<CarViewHolder> {
 
     private List<Car> mListCar;
+    private OnListClickInteractionListener mOnListClickInteractionListener;
 
-    public CarListAdapter(List<Car> cars) {
+    public CarListAdapter(List<Car> cars, OnListClickInteractionListener listener) {
         this.mListCar = cars;
+        this.mOnListClickInteractionListener = listener;
     }
 
     @Override
@@ -36,7 +39,7 @@ public class CarListAdapter extends RecyclerView.Adapter<CarViewHolder> {
     @Override
     public void onBindViewHolder(CarViewHolder holder, int position) {
         Car car = this.mListCar.get(position);
-        holder.bindData(car);
+        holder.bindData(car, mOnListClickInteractionListener);
     }
 
     @Override
