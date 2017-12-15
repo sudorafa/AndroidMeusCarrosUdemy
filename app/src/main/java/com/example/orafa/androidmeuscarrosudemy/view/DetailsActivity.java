@@ -2,6 +2,7 @@ package com.example.orafa.androidmeuscarrosudemy.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.orafa.androidmeuscarrosudemy.R;
@@ -15,12 +16,16 @@ import static com.example.orafa.androidmeuscarrosudemy.constantes.CarsConstantes
 
 public class DetailsActivity extends AppCompatActivity {
 
-    @BindView(R.id.text_model)
-    TextView textModel;
-    @BindView(R.id.text_horse_power)
-    TextView textHorsePower;
-    @BindView(R.id.text_price)
-    TextView textPrice;
+    @BindView(R.id.image_view_car_pic_detail)
+    ImageView imageViewCarPicDetail;
+    @BindView(R.id.text_view_model)
+    TextView textViewModel;
+    @BindView(R.id.text_view_manufacturer)
+    TextView textViewManufacturer;
+    @BindView(R.id.text_view_horse_power)
+    TextView textViewHorsePower;
+    @BindView(R.id.text_view_price)
+    TextView textViewPrice;
 
     private CarMock mCarMock;
     private Car mCar;
@@ -40,9 +45,11 @@ public class DetailsActivity extends AppCompatActivity {
     }
 
     private void setData() {
-        this.textModel.setText(this.mCar.getModel());
-        this.textHorsePower.setText(String.valueOf(this.mCar.getHorsePower()));
-        this.textPrice.setText(String.valueOf(this.mCar.getPrice()));
+        this.imageViewCarPicDetail.setImageDrawable(this.mCar.getPicture());
+        this.textViewModel.setText(this.mCar.getModel());
+        this.textViewManufacturer.setText(this.mCar.getManufacturer());
+        this.textViewHorsePower.setText(String.valueOf(this.mCar.getHorsePower()));
+        this.textViewPrice.setText(String.valueOf(this.mCar.getPrice()));
     }
 
     public void getDataFromActivity() {
