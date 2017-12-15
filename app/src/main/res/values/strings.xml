@@ -3,4 +3,5 @@
     <string name="model">Modelo:</string>
     <string name="horsePower">Cavalos:</string>
     <string name="price">Preço:</string>
+    <string name="view_detail">Ver Detalhes</string>
 </resources>
