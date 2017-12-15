@@ -49,7 +49,7 @@ public class DetailsActivity extends AppCompatActivity {
         this.textViewModel.setText(this.mCar.getModel());
         this.textViewManufacturer.setText(this.mCar.getManufacturer());
         this.textViewHorsePower.setText(String.valueOf(this.mCar.getHorsePower()));
-        this.textViewPrice.setText(String.valueOf(this.mCar.getPrice()));
+        this.textViewPrice.setText(String.format("R$ %s", String.valueOf(this.mCar.getPrice())));
     }
 
     public void getDataFromActivity() {
