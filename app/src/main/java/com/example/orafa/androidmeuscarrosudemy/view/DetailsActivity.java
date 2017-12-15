@@ -30,7 +30,7 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        this.mCarMock = new CarMock();
+        this.mCarMock = new CarMock(this);
 
         ButterKnife.bind(this);
 

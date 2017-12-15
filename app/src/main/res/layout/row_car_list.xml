@@ -24,7 +24,7 @@
             android:src="@drawable/audir8" />
 
         <TextView
-            android:id="@+id/text_view_model"
+            android:id="@+id/text_view_car_model"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/image_view_car_pic"
@@ -37,7 +37,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/text_view_details"
+            android:id="@+id/text_view_car_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@id/image_view_car_pic"
